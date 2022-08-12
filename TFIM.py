@@ -11,7 +11,7 @@ from tenpy.models.tf_ising import TFIModel
 def tfim_2d(p):
     """
     Finds the ground state of the 2D transverse field ising model: 
-    H = -J \sum_{i} \sigma^{x}_{i} \sigma^{x}_{i+1} - g \sum_{i} \sigma^{z}_{i}
+    H = -J \sum_{<i,j>} \sigma^{x}_{i} \sigma^{x}_{j} - g \sum_{i} \sigma^{z}_{i}
     
     Input:
         p - Dictionary with all relevant parameters:
